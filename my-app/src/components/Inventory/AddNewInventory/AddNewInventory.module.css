@@ -1,0 +1,165 @@
+/* src/components/Inventory/AddNewInventory/AddNewInventory.module.css */
+.container {
+  padding: 30px;
+  background-color: white;
+  min-height: 100vh;
+}
+
+.header {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+.pageTitle {
+  font-size: 24px;
+  font-weight: 600;
+  color: #333;
+}
+
+.contentWrapper {
+  padding: 0 20px;
+}
+
+.formSection {
+  max-width: 1000px;
+}
+
+.subtitle {
+  font-size: 20px;
+  font-weight: 600;
+  color: #555;
+  margin: 0 0 10px 0;
+}
+
+.backButton {
+    text-decoration: none;
+    color: #007bff;
+    font-size: 14px;
+    margin-bottom: 30px;
+    display: inline-block;
+}
+
+.backButton:hover {
+    text-decoration: underline;
+}
+
+.form {
+  display: flex;
+  gap: 40px;
+  padding: 20px;
+  border: 1px solid #eee;
+  border-radius: 8px;
+}
+
+/* --- Cột trái: Form Inputs --- */
+.inputColumn {
+    flex: 1.5; /* Chiếm nhiều không gian hơn */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.formGroup {
+  grid-column: span 1;
+}
+
+.formGroupDescription {
+  grid-column: 1 / 3; /* Chiếm 2 cột */
+}
+
+.label {
+  display: block;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.input, .textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.textarea {
+  height: 150px;
+  resize: vertical;
+}
+
+/* --- Cột phải: Image Upload/Preview --- */
+.uploadColumn {
+    flex: 1; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.imagePlaceholder {
+  width: 100%;
+  max-width: 350px; 
+  height: 250px;
+  border: 2px dashed #ccc;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #999;
+  overflow: hidden;
+  background-color: #f9f9f9;
+  margin-bottom: 20px;
+}
+
+.imagePreview {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.uploadLabel {
+    background-color: #4CAF50; /* Màu Xanh lá cây cho nút Upload */
+    color: white;
+    padding: 12px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s;
+    display: inline-block;
+}
+
+.uploadLabel:hover {
+    background-color: #45a049;
+}
+
+.fileInput {
+  display: none; /* Ẩn input file gốc */
+}
+
+.fileName {
+    font-size: 12px;
+    color: #555;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.submitButton {
+  grid-column: 1 / 3;
+  width: 150px;
+  background-color: #4CAF50; /* Dùng lại màu xanh lá cây */
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 20px;
+  transition: background-color 0.3s;
+}
+
+.submitButton:hover {
+  background-color: #45a049;
+}

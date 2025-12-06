@@ -1,0 +1,88 @@
+.customerReview {
+  padding: 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  /* Giữ style nhẹ nhàng, không có nền trắng như Romdol */
+}
+
+.header h2 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #333;
+}
+
+.filter {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: #666;
+}
+
+.filter select {
+  padding: 8px 15px;
+  margin-left: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 cột thống kê */
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.customerReviewSection {
+  margin-top: 40px;
+}
+
+.reviewHeader {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.reviewHeader h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0 15px 0 0;
+}
+
+.reviewHeader p {
+  font-size: 14px;
+  color: #999;
+  margin: 0;
+  flex-grow: 1;
+}
+
+.navigation {
+  display: flex;
+}
+
+.arrow {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  color: #333;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-left: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.reviewsList {
+  display: flex;
+  /* Cho phép scroll ngang nếu cần */
+  overflow-x: auto;
+  padding-bottom: 10px;
+}

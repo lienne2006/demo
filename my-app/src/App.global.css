@@ -1,0 +1,35 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body, html {
+    font-family: Arial, sans-serif; 
+    line-height: 1.6;
+    background-color: #f4f7f9;
+    color: #333;
+    min-height: 100vh;
+}
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Thiết lập kích thước font cơ sở */
+p, h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 0.5em;
+}
+
+/* Style cho các nút chung (Button) */
+button {
+    cursor: pointer;
+    font-size: 14px;
+    padding: 8px 15px;
+    border-radius: 6px;
+    transition: background-color 0.2s ease, box-shadow 0.2s ease;
+    border: 1px solid transparent;
+}

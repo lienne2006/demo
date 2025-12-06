@@ -1,0 +1,34 @@
+/* Container chính của toàn bộ ứng dụng */
+.appContainer {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* Vùng nội dung chính (phần bên phải, sau Sidebar) */
+.mainContent {
+    flex-grow: 1; /* Cho phép vùng này mở rộng tối đa */
+    margin-left: 280px; /* Bằng chiều rộng cố định của Sidebar */
+    padding: 30px;
+    box-sizing: border-box;
+    position: relative; /* Dùng cho toggleButton */
+}
+
+/* Nút chuyển đổi Layout (chỉ dùng trong môi trường phát triển) */
+.toggleButton {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.3);
+    z-index: 1000;
+}
+.toggleButton:hover {
+  /* Đổ bóng mạnh hơn khi hover */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); 
+  /* Nâng nhẹ thẻ lên */
+  transform: translateY(-5px);
+  transition: box-shadow 0.5s ease, transform 0.5s ease;
+}
